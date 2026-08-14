@@ -202,9 +202,23 @@
   text-decoration: none;
   font-size: 15px;
 }
+.tw-social svg {
+  width: 16px;
+  height: 16px;
+  display: block;
+  fill: currentColor;
+}
 .tw-social--fb { background: #3b5998; }
 .tw-social--ig { background: #262626; }
 .tw-social--pin { background: #bd081c; }
+
+/* Footer Elementor social SVGs (in case theme CSS is missing) */
+.elementor-social-icon svg.e-font-icon-svg,
+.elementor-social-icon .e-font-icon-svg {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
 
 @media (max-width: 1024px) {
   .tw-product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
